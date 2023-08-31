@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dbms_project.loginController">
+   <children>
+      <TextField fx:id="userName" layoutX="74.0" layoutY="76.0" promptText="User Name" style="-fx-border-color: #0559ff; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" />
+      <PasswordField fx:id="userPassword" layoutX="74.0" layoutY="136.0" onKeyPressed="#enterPressed" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0559ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <CheckBox layoutX="185.0" layoutY="29.0" mnemonicParsing="false" />
+      <Label layoutX="24.0" layoutY="29.0" text="You are an adminstrator?" />
+   </children>
+</AnchorPane>

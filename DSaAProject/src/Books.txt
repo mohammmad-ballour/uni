@@ -1,0 +1,49 @@
+4
+book_id -> 100
+title -> Statistics
+author -> Anthony Hayter
+isbn -> 139284235
+quantity -> 0
+price -> $25
+publisher -> Batsford
+total_pages -> 700
+rating -> 4.0
+published_date -> 11/5/2017
+imgPath -> C:\\Users\\pc\\Desktop\\DSaA\\DSaAProject\\images\\Statistics.jpeg
+
+book_id -> 101
+title -> The Art Of CHECKMATE
+author -> Victor Khan
+isbn -> 139284235
+quantity -> 4
+price -> $25
+publisher -> Batsford
+total_pages -> 480
+rating -> 3.4
+published_date -> 11/4/2010
+imgPath -> C:\\Users\\pc\\Desktop\\DSaA\\DSaAProject\\images\\The Art Of CHECKMATE.jpeg
+
+book_id -> 102
+title -> Analysis Of Financial Data
+author -> Ruey S. Tsay
+isbn -> 131934527
+quantity -> 3
+price -> $80
+publisher -> Wiley
+total_pages -> 600
+rating -> 3.8
+pubished_date -> 16/1/2018
+imgPath -> C:\\Users\\pc\\Desktop\\DSaA\\DSaAProject\\images\\Analysis Of Financial Data.jpeg
+
+book_id -> 103
+title -> Algorithms Unplugged
+author -> Richard Reese
+isbn -> 133925527
+quantity -> 6
+price -> $75
+publisher -> OReilly Media, Inc
+total_pages -> 208
+rating -> 3.7
+published_date -> 21/10/2022
+imgPath -> C:\\Users\\pc\\Desktop\\DSaA\\DSaAProject\\images\\Algorithms Unplugged.jpeg
+

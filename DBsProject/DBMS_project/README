@@ -1,0 +1,48 @@
+Introduction
+	This is our first project in database systems course. It simplifies the process of management of courses, lectures, students attendance and more.
+	"Attendance Tracker" is robust, reliable and provides user-friendly interfaces.
+
+Usage
+	Create a database by running ddl.sql and populate database tables by running sample_data.sql.
+	Then, you can safely run Main.java and login to the system.
+
+Interfaces
+	• Login interface:
+		1- For superuser(admins) to login, only sysid and name are required. sysid is a unique id postgres gives to users. You can use the query SELECT useid FROM pg_shadow WHERE usename = 'username' to get the sysid for 'username'.
+		Please note that retrieving the password does NOT work with us, so we restrict the process of authentication just to 'sysid' for a 'usename'.
+
+		2- For TAs to login, id, name and password are required for verification. We include the name just for readability purposes when creating users in postgreSQL; otherwise, it can be omitted.
+		Passwords were intentionally encrypted, already-created TAs have passwords as follows: name & "ta", eg, Hasan's password is hasanta.
+
+	• Admins Interface
+		Admins interface is simply a bunch of stacked buttons. Buttons are either create buttons or update buttons.
+		If a button triggers a click, it will open a dialog for the admin to fill it with appropriate data which will be then committed to the database.
+
+	• TAs Interface
+		TAs Interface is split into two sections. The first one is concerned with modifications to students or lectures data.
+		All modifiable attributes are listed in a ListView, once double-clicked, it pops up a small dialog to read the new value and then, hopefully, commit changes to database. 
+		The second section focuses on attendance tracking (view or update) for different options (individual students, lectures or sections).
+		For inserting a new attendance, Importing an excel sheet is supported and more preferable than filling the data manually.
+		Also, Exporting an existing attendance statistics to Excel is supported. 
+
+Libraries and Modules
+	• Project Lombok
+		Lombok is used for code reduction and readability. Please note that lombok was add manually as a jar to the project,
+		you may download it, activate it via IntelliJ's plugins systems or keep all work to Maven.
+
+	• Apache POI 
+		Apache POI is used for working with Microsoft Excel files. 
+
+	• jbcypt 
+		jbcrypt is used to encrypt and decrypt passwords using the Blowfish Algorithm (BA).
+
+	• controlsFX 
+		controlsFX is mainly used to implement autocomplete functionality in JavaFX TextField.
+		Note that auto-complete text TableCell in TableView is not supported by controlsFX, so we customized the behavior of the TableCell with the help of Oracle.
+		Source: Oracle docs https://docs.oracle.com/javafx/2/ui_controls/table-view.htm
+		Note: The code has been adapted to fit the project requirements and modified from the original version.
+
+Authors
+	‌Mohammad W. Ballour
+	‌Mohammad A. Shukor
+	‌Baraa M. Shaat

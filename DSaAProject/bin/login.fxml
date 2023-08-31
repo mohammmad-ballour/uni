@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="397.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginController">
+   <children>
+      <TextField fx:id="userName" layoutX="74.0" layoutY="76.0" promptText="User Name" style="-fx-border-color: #0559ff; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="userEmail" layoutX="74.0" layoutY="126.0" promptText="Email" style="-fx-border-color: #0559ff; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" />
+      <PasswordField fx:id="userPassword" layoutX="75.0" layoutY="186.0" onKeyPressed="#enterPressed" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0559ff; -fx-border-width: 0px 0px 2px 0px;" />
+   </children>
+</AnchorPane>
