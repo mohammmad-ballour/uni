@@ -1,2 +1,1 @@
-# uni
-Uni courses projects
+This repository is for my university courses projects.
